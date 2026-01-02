@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support with AI</title>
+
+    <link rel="stylesheet" href="support.css">
+</head>
+
+<body>
+
+
+    <!-- Chat support section -->
+
+    <!-- AI Support Chatbot -->
+    <div id="ai-chatbot">
+        <div class="chat-header">
+            <div>
+                <strong>🤖 AI Support</strong>
+                <p>Bhagwat Katha Assistant</p>
+            </div>
+            <span id="closeChat">✖</span>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+            <div class="bot-msg">
+                🙏 Namaste!
+                Main aapki sahayata ke liye hoon.
+                Neeche options select karein 👇
+            </div>
+
+            <div class="quick-replies">
+                <button onclick="quickSend('Booking')">📅 Booking</button>
+                <button onclick="quickSend('Price')">💰 Price</button>
+                <button onclick="quickSend('Katha')">📖 Katha</button>
+                <button onclick="quickSend('Contact')">📞 Contact</button>
+            </div>
+        </div>
+
+        <div class="chat-footer">
+            <input type="text" id="userInput" placeholder="Type message & press Enter..." />
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+    <button id="chatToggle">💬</button>
+
+
+    <script src="support.js"></script>
+
+
+</body>
+
+</html>
